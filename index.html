@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Buzz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="landing-container">
+        <h2>Welcome to Quiz Buzz</h2>
+        <div class="difficulty-options">
+            <button onclick="startQuiz('easy')">Easy</button>
+            <button onclick="startQuiz('medium')">Medium</button>
+            <button onclick="startQuiz('hard')">Hard</button>
+        </div>
+    </div>
+    <div class="quiz-container" id="quiz-container" style="display: none;">
+        <h2>Quiz</h2>
+        <form id="quiz-form">
+            <p id="question"></p>
+            <div id="choices"></div>
+        </form>
+        <p id="feedback"></p>
+        <button id="return-button" style="display: none;">Do you want to choose another difficulty level?</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
